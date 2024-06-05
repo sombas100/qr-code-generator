@@ -37,7 +37,14 @@ const QRCodeGenerator: React.FC = () => {
   };
 
   return (
-    <div style={{ width: "100%", height: "100%" }}>
+    <div
+      style={{
+        backgroundColor: "#ECFFDC",
+        padding: "12px 20px 28px 20px",
+        width: "800px",
+        height: "750px",
+      }}
+    >
       <h1>QR Code Generator!</h1>
       <p>Create your own QR Code in seconds</p>
       <div>
@@ -53,7 +60,7 @@ const QRCodeGenerator: React.FC = () => {
         <label>
           Foreground Color:
           <input
-            style={{ marginLeft: "9px" }}
+            style={{ cursor: "pointer", marginLeft: "9px" }}
             type="color"
             value={fgColor}
             onChange={handleChangeFgColor}
@@ -64,7 +71,7 @@ const QRCodeGenerator: React.FC = () => {
         <label>
           Background Color:
           <input
-            style={{ marginLeft: "9px" }}
+            style={{ cursor: "pointer", marginLeft: "9px" }}
             type="color"
             value={bgColor}
             onChange={handleChangebgColor}
@@ -91,9 +98,10 @@ const QRCodeGenerator: React.FC = () => {
           marginLeft: "7px",
           fontSize: "16px",
           cursor: "pointer",
+          borderRadius: "8px",
         }}
       >
-        Download QR Code
+        Generate QR Code
       </button>
     </div>
   );
