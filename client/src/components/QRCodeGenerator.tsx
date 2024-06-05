@@ -45,7 +45,7 @@ const QRCodeGenerator: React.FC = () => {
         height: "750px",
       }}
     >
-      <h1>QR Code Generator!</h1>
+      <h1>QR Code Generator</h1>
       <p>Create your own QR Code in seconds</p>
       <div>
         <QRCode
